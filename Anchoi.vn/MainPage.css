@@ -1,0 +1,283 @@
+html, body { 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Helvetica', 'Arial'; /* initial fonts */
+}
+#top-bar { 
+    width: 100%; 
+    background: #F1F1F1; /* light gray */ 
+    border-bottom: 1px solid #D4D4D4; /* dark gray "underline" */ 
+    height: 25px;
+}
+.normal-wrapper { 
+    width: 100%;
+    height: fit-content; 
+    margin: 0 auto; 
+    padding: 15px 40px; 
+    background: white; 
+    overflow: auto;
+}
+#logo { 
+    color: #000000; 
+    font-size: 60pt; 
+    float: left;
+    height: 75px;
+}
+#header1 { 
+    float: left; 
+    margin: 21px 0 0 25px;
+}
+#top-color-splash { 
+    width: 100%; 
+    height: 4px; 
+    background: #EB6361;
+}
+#navbar { 
+    list-style-type: none; /* remove bullet points */ 
+    margin: 29px 50px 0 0; 
+    padding: 0; float: right; 
+    font-size: 16pt;
+}
+#navbar li { 
+    display: inline; /* make items horizontal */
+}
+#navbar li a:link, #navbar li a:visited, #navbar li a:active { 
+    text-decoration: none; /* remove underline */ 
+    color: #000000; 
+    padding: 0 16px 0 10px; /* space links apart */ 
+    margin: 0; 
+    border-right: 2px solid #B4B4B4; /* divider */
+}
+#navbar li a:link.last-link { 
+    /* remove divider */ 
+    border-right: 0px;
+}
+#navbar li a:hover { 
+    /* change color on hover (mouseover) */ 
+    color: #EB6361;
+}
+.one-third { 
+    width: 40%; 
+    float: left; 
+    box-sizing: border-box; /* ensure padding and borders do not increase the size */ 
+    margin-top: 20px;
+}
+.two-third { 
+    width: 60%; 
+    float: left; 
+    box-sizing: border-box; /* ensure padding and borders do not increase the size */ 
+    padding-left: 40px; 
+
+    margin-top: 20px;
+}
+.featured-image { 
+    max-width: 500px; /* reduce image size while maintaining aspect ratio */
+}
+.no-margin-top { 
+    margin-top: 0; /* remove margin on things like headers */
+}
+#quote-area { 
+    background: #363636; 
+    color: #FFFFFF; 
+    text-align: center; 
+    padding: 15px 0;
+}
+h3 { 
+    font-weight: normal; 
+    font-size: 20pt; 
+    margin-top: 0px;
+}
+h4 { 
+    font-weight: normal; 
+    font-size: 16pt; 
+    margin-bottom: 0;
+}
+.icon-outer { 
+    box-sizing: border-box; /* ensure padding and borders do not increase the size */ 
+    float: left; 
+    width: 33.33%; 
+    padding: 25px; 
+    margin: 0; 
+    text-align: center;
+}
+.icon-circle { 
+    background: #EEEEEE; 
+    color: #B4B4B4; 
+    width: 200px; 
+    height: 200px; 
+    border-radius: 200px; /* make rounded corners */ 
+    margin: 0 auto; 
+    border: 2px solid #D6D6D6; 
+    box-sizing: border-box; /* ensure padding and borders do not increase the size */ 
+    font-size: 75pt; 
+    padding: 30px 0 0 0; 
+    cursor: pointer;
+}
+.icon-circle:hover { 
+    /* change color on hover (mouseover) */ 
+    color: #FFFFFF; 
+    background: #EB6361;}
+h5 { 
+    margin: 15px 0 10px 0; 
+    font-size: 20pt;
+}
+#footer { 
+    width: 100%; 
+    background: #F1F1F1; /* light gray */ 
+    border-top: 1px solid #D4D4D4; /* 
+    dark gray "topline" */ 
+    height: 150px;
+}
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+
+#header1, .no-margin-top, #middle   { 
+    font-family: 'PT Sans', 'Helvetica', 'Arial';
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+
+}
+.mySlides img{
+    border: 2px solid orange;
+    border-radius: 25px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+    margin-right: 100px
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#signInBtn {
+        width: 150px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        padding: 15px 20px 15px 20px;
+        border-radius: 30px;
+        border: 4px solid rgb(0, 0, 0);
+        cursor: pointer;
+        margin-top: 20px;
+        font-size: 20px;
+        transition: 0.6s ease
+}
+#signInBtn:hover {
+    background-color: rgb(255,255,250);
+    color:rgb(0, 0, 0)
+}
+#signUpBtn {
+    width: 150px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        padding: 15px 20px 15px 20px;
+        border-radius: 30px;
+        border: 4px solid rgb(0, 0, 0);
+        cursor: pointer;
+        margin-top: 20px;
+        font-size: 20px;
+        transition: 0.6s ease
+}
+#signUpBtn:hover {
+    background-color: rgb(255,255,250);
+    color:rgb(0, 0, 0)
+}
+#button1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.info{
+    font-size: 1.1rem;
+}
+#middle{
+    text-align: center;
+    font-size: 1.5rem;
+}
