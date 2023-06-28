@@ -1,0 +1,89 @@
+import React from 'react';
+import { styled } from '@mui/system';
+import { Link } from '@mui/material';
+
+const FancyLink = styled(Link)`
+  background-color: transparent;
+  border: 2px solid #febf62;
+  border-radius: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 1.25em 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  font-size: 13px;
+
+  &:hover {
+    color: white;
+    background: #febf62;
+
+    .text {
+      color: white;
+    }
+
+    .top-key {
+      left: -2px;
+      width: 0;
+    }
+
+    .bottom-key {
+      right: 0;
+      width: 0;
+    }
+  }
+
+  .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    display: block;
+    font-family: var(--font-raleway); 
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #febf62;
+  }
+
+  .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 1rem;
+    position: absolute;
+    background: #ff8256;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+  }
+
+  .bottom-key {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1rem;
+    bottom: -2px;
+    position: absolute;
+    background: #ff8256;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+  }
+`;
+
+function FancyButton() {
+  return (
+    <FancyLink href="#">
+      <span className="top-key"></span>
+      <span className="text">Tham gia ngay</span>
+      <span className="bottom-key"></span>
+    </FancyLink>
+  );
+}
+
+export default FancyButton;

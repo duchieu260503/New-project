@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap');
+
 :root {
   --primary-color: #5bb462;
   --primary-dark: #4f9c55;
   --secondary-color: #ffea00;
   --secondary-dark:#e3d002;
   --overlay: rgba(0,0,0,.7);
+  --font-roboto: 'Roboto', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-raleway: 'Raleway', sans-serif;
 }
 
 * {
@@ -23,40 +30,3 @@ body {
   line-height: 1.2;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.button {
-  padding: 17px 28px;
-  font-size: 1.2rem;
-  color: #fff;
-  font-weight: 600;
-  text-transform: uppercase;
-  background-color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background: var(--primary-dark);
-  border: 1px solid var(--primary-dark);
-}
-
-.line {
-  display: block;
-  width: 40px;
-  height: 3px;
-  margin: 5px auto;
-  background-color: var(--primary-color);
-}
