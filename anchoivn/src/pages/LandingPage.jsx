@@ -99,7 +99,7 @@ export default function LandingPage() {
                 }}
               >
                 {/* <Button variant="contained">Contained</Button> */}
-                <FancyButton/>
+                <FancyButton content={"Tham gia ngay"} padding={1} keyColor={"#ff8256"} size={15}/>
               </Box>
             </Stack>
           </Grid>

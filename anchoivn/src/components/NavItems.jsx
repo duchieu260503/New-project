@@ -19,7 +19,7 @@ export default function NavItems({ items }) {
     <Grid
       item
       container
-      xs={4.8}
+      xs={5}
       sx={{
         height: "100%",
         display: { xs: "none", sm: "none", md: "flex" },

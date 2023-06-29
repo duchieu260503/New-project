@@ -6,6 +6,7 @@ import Image from "mui-image";
 import NavItems from "./NavItems";
 import items from "./NavItemsInfor";
 import SideDrawer from "./SideDrawer";
+import RightSideNav from "./RightSideNav";
 
 import logo from "../assets/images/logo.png";
 
@@ -22,14 +23,14 @@ const Navbar = () => {
       sx={{
         display: "block",
         position: "relative",
-        height: { xs: "5%", sm: "5%", md: "5%", lg: "10%" },
+        height: { xs: "10%" },
       }}
     >
       <AppBar
         position="fixed"
         sx={{
           width: "100%",
-          height: { xs: "5%", sm: "5%", md: "5%", lg: "10%" },
+          height: { xs: "10%" },
           backgroundColor: "white",
           boxShadow: "none",
         }}
@@ -58,39 +59,32 @@ const Navbar = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              px: "30px"
             }}
           >
-            <Box
+            <Grid
+            item
+            container
+            xs={2}
               sx={{
-                width: "20%",
                 height: "100%",
                 color: "black",
                 display: "flex",
                 alignItems: "center",
-                justifyContent: "center",
+                justifyContent: "flex-start",
               }}
             >
               <Image
                 src={logo}
                 height="100%"
-                width="70%"
+                width="100%"
                 fit="fill"
                 duration={0}
               />
-            </Box>
+            </Grid>
             {/* NavItems component chứa các mục trong navigator*/}
             <NavItems items={items} />
-            <Box
-              sx={{
-                width: "40%",
-                color: "black",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              Chỗ này để chèn cái search với cả sign in
-            </Box>
+            <RightSideNav />
           </Grid>
         </Toolbar>
       </AppBar>
